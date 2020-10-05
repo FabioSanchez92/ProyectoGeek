@@ -18,7 +18,7 @@ export const NavPrincipal = ({navItem , Menu, NavLink}) => {
                     {
                         items.map( (ItemsMenu, y)  =>{
                             return  <li>
-                                        <Link className= {NavLink} >{ItemsMenu}</Link>
+                                        <Link to= '/Equipo' className= {NavLink} >{ItemsMenu}</Link>
                                     </li>
                         })
                     }
