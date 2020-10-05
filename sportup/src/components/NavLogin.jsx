@@ -10,13 +10,12 @@ export const NavLogin = ({MenuRedes}) => {
             </div>
             <nav className="d-flex aic">
                 <Link to="/" className="login"><i className="fa fa-user mr-2" aria-hidden="true"></i>Iniciar sesión</Link>
-                <a href="#" className="login"></a>
+                <Link to="/" className="login">Login</Link>
                 <ul className="nav social d-none d-md-flex">
                     {
                         items.map((itemRedes, y)=>{
-                            
                             return  <li>
-                                <Link to=""> <i className={itemRedes}></i></Link>
+                                <Link key={y} to=""> <i className={itemRedes}></i></Link>
                             </li>
                         })
                     }

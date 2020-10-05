@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const NavPrincipal = ({navItem , Menu, NavLink}) => {
+export const NavPrincipal = ({navItem , Menu, NavLink, data}) => {
     const items = [...Menu];
+    
     return (
         <nav className="navbar navbar-expand-md navbar-light">
             <h2 className="mb-5">SportUp</h2>
