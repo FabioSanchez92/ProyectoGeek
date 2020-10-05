@@ -139,6 +139,7 @@ form button.btn-primary:hover {
   overflow: hidden;
   position: relative;
   z-index: 0;
+  /* height: 100vh; */
 }
 
 .hero .container {
@@ -294,23 +295,199 @@ form button.btn-primary:hover {
   padding: 25px 25px 0 0;
   background-color: #fff;
 }
+/*-----------------------------------
+    1 - Modal Cuenta
+------------------------------------*/
+.btn-openModal {
+  background: #2c2c2c;
+  color: #eee;
+  font-size: 1rem;
+  margin: 2rem;
+  padding: .5rem 1.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#Modal{
+ margin-top: -465px;
+ position: absolute;
+ z-index: 99;
+}
+.modal-wrapper {
+  background: #fff;
+  width: 80%;
+  max-width: 800px;
+  margin: 4rem auto;
+  transition: all .5s ease;
+}
+
+.modal-header {
+  background: #2c2c2cc2;
+  color: #e9e9e9;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding: 1.5rem 1rem;
+}
+
+.modal-body {
+  margin-bottom: 1rem;
+}
+
+.modal-body h4 {
+  font-size: 1.8rem;
+  color: #DD501D;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  background: #eee;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.modal-footer button {
+  display: block;
+  font-size: 1rem;
+  margin-left: auto;
+  padding: 0.5rem 1.8rem;
+  background: #DD501D;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.back-drop {
+  background: rgba(63, 61, 61, 0.692);
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  width: 100%;
+}
+/*-----------------------------------
+    1 - Equipo
+------------------------------------*/
+.Equipo {
+  padding: 100px 0;
+}
+
+.Equip {
+  padding: 65px 0 40px;
+  margin-top: 23px;
+  color: #fff;
+  background: #26264b;
+  border: 0px solid #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  margin-right: 3px;
+}
+
+.Equip span {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  position: absolute;
+  top: 28px;
+  right: 6px;
+  transition: all 0.2s ease-in-out;
+}
+img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.Equip h2 {
+  margin-bottom: -5px;
+}
+
+.Equip .desc {
+  color: #9d9d9d;
+  padding-bottom: 30px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #2f2f2f;
+  transition: all 0.2s ease-in-out;
+  font-size: 30PX;
+}
+
+.Equip .price {
+  font-size: 15PX;
+  margin-bottom: 8px;
+  color: #eeeff0;
+
+}
+
+.Equip p {
+  color: #ddd;
+  margin: 15px;
+}
+
+.Equip p:last-of-type {
+  margin-bottom: 25px;
+}
+
+.Equip svg {
+  width: 170px;
+  position: absolute;
+  top: -45px;
+  right: -60px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.Equip:hover {
+  border: 4px solid #fff;
+  box-shadow: 0px 10px 18px 0px rgba(44, 43, 47, 0.16);
+  margin: 19px 0 -4px;
+}
+
+.Equip:hover span {
+  background-color: #26264b;
+}
+
+.Equip:hover .desc {
+  color: #fff;
+  border-bottom: 2px solid rgba(116, 116, 116, 0.692);
+}
+
+.Equip:hover svg {
+  width: 500%;
+  top: -200%;
+  right: -50%;
+}
 
 /*-----------------------------------
     1 - Testimonials
 ------------------------------------*/
-.testimonial-and-clients {
-  /* background: url(../images/test-clients-bg.png) center center/cover no-repeat #00acac; */
+/* .Equipo {
+  background: url(./img/test-clients-bg.png) center center/cover no-repeat #00a59c;
   height: 100vh;
   
 }
 
-.testimonials {
+.Equipos{
   padding: 95px 0 85px;
   color: #fff;
   border-bottom: 1px solid #26264b;
 }
 
-.testimonials .test-img {
+.Equipos.test-img, img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -318,27 +495,28 @@ form button.btn-primary:hover {
   overflow: hidden;
 }
 
-.testimonials .test-img img {
+.Equipos.test-img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 90px;
 }
 
-.testimonials h5 {
+.Equipos  h5 {
   color: #26264b;
   margin-top: 15px;
 }
 
-.testimonials span {
-  color: #c4c4c4;
+.Equipos, span {
+  color: #dbdbdb;
   display: inline-block;
   margin: 0 0 17px;
 }
 
-.testimonials p {
+.Equipos, p {
   font-size: 17px;
   line-height: 27px;
+  color: #e6e6e6;
 }
 
 .test-pagination {
@@ -350,7 +528,7 @@ form button.btn-primary:hover {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #26264b;
+  background-color: #dab40e;
   margin-bottom: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -367,8 +545,7 @@ form button.btn-primary:hover {
   width: 12px;
   height: 12px;
   background-color: white;
-}
-
+} */
 
 /*-----------------------------------
     1 - Footer
