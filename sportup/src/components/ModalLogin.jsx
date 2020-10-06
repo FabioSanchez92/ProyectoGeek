@@ -20,6 +20,12 @@ export const ModalLogin = ({ show, close }) => {
                 <div class="form-group">
                     <label for="message-text" class="col-form-label">Message:</label>
                     <textarea class="form-control" id="message-text"></textarea>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    
                 </div>
                 </form>
             </div>
