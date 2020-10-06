@@ -1,0 +1,57 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "Nombres": "Fabio",
+      "Apellidos": "Sánchez Sánchez",
+      "Correo": "fabio_developer@hotmail.com",
+      "Contrasena": "Colombia123.",
+      "Edad": 27,
+      "Ciudad": "Medelliín"
+    }
+  ],
+  "publicaciones": [
+    {
+      "id": 1,
+      "id_organizador": 1,
+      "evento": "biciruta para san felix ",
+      "lugar_encuentro": "udea",
+      "hora_partida": "8am",
+      "participantes" :[
+            {
+                "id" : 1,
+                "id_evento" : 1,
+                "id_usuario" : 1,
+                "nombre" : "fabio"
+            }
+            
+      ]
+    },
+    {
+        "id": 1,
+        "id_organizador": 1,
+        "evento": "biciruta para san felix ",
+        "lugar_encuentro": "udea",
+        "hora_partida": "8am",
+        "participantes" :[
+            {
+                "id" : 1,
+                "id_evento" : 1,
+                "id_usuario" : 1,
+                "nombre" : "fabio"
+            }
+            
+        ]
+      },
+    {
+      "id": 2,
+      "id_usuario": 1,
+      "evento": "skate av oriental ",
+      "lugar_encuentro": "edificio de los espejos",
+      "hora_partida": "am"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

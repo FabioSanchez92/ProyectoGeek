@@ -13,7 +13,7 @@ export const Equipo = ({ Equipo }) => {
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <div className="Equip text-center">
-                       <img src={imgFabi} alt="Integrantes" />
+                    <img src={imgFabi} alt="Integrantes" />
                         <p className="desc">Fabio Sanchez</p>
                         <p className="price">DESARROLLADOR FRONTEND</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitatio nullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -25,7 +25,7 @@ export const Equipo = ({ Equipo }) => {
                 </div>
                 <div className="col-md-4">
                     <div className="Equip text-center">
-                       <img src={imgWill} alt="Integrantes" />
+                    <img src={imgWill} alt="Integrantes" />
                         <p className="desc">Wilinton Delgado</p>
                         <p className="price">DESARROLLADOR FRONTEND</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitatio nullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -37,7 +37,7 @@ export const Equipo = ({ Equipo }) => {
                 </div>
                 <div className="col-md-4">
                     <div className="Equip text-center">
-                       <img src={imgMoni} alt="Integrantes" />
+                    <img src={imgMoni} alt="Integrantes" />
                         <p className="desc">Mónica Arbeláez</p>
                         <p className="price">DESARROLLADORA FRONTEND</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitatio nullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

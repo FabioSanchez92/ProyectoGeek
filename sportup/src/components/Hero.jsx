@@ -1,41 +1,33 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
-import { Modal} from './Modal';
+import { ModalLogin} from './ModalLogin';
 
 export const Hero = ({hero}) => {
     const [show, setShow] = useState(false);
     const closeModalHandler = () => setShow(false);
+
+    const [registro, setRegistro] = useState(false);
+    const closeModalHandler1 = () => setRegistro(false);
+
     return (
-        <section className={hero}>
-            <div className="container">
-                <div className="row mb-2">
-                    <div className="col-12 offset-md-1 col-md-11">
-                        <div className="swiper-container hero-slider">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide slide-content d-flex align-items-center">
-                                    <div className="single-slide mt-5">
-                                        <h1 data-aos="fade-right" data-aos-delay="200">                                          
-                                            Sport Up<br/>Creado para unirte con el deporte 
-                                        </h1>
-                                        <p data-aos="fade-right" data-aos-delay="600">Te conecta con personas con tus mismos 
-                                            gustos deportivos, <br/> para que puedan disfrutar de su afición juntos
-                                        </p>
-                                            
-                                            <Link to="" className="btn btn-primary" data-aos="fade-right" data-aos-delay="900">Iniciar sesión</Link>
-                                            { show ? <div onClick={closeModalHandler} className="back-drop"></div> : null }
-                                            <Link to="" onClick={() => setShow(true)} className="btn btn-primary"  data-aos="fade-right">Crear cuenta</Link>
-                                            <Modal show={show} close={closeModalHandler} />
-                                            
-                                        
-                                        {/* <Link to="" className="btn btn-primary"  data-aos="fade-right" data-aos-delay="900">Crear cuenta</Link> */}
-                                        {/* <Link to="" className="btn btn-primary" data-aos="fade-right" data-aos-delay="900">Iniciar sesión</Link> */}
-                                    </div>
-                                </div>
+        <div className="container">
+            <div className="jumbotron">
+                    <h2>SportUp</h2>
+                    <p> Adipisicing labore pariatur veniam eiusmod adipisicing aute laborum. </p>
+                    <div  className="form-group">
+                        <div className="row">
+                            <div className="col-6">
+                            { show ? 
+                                <div onClick={closeModalHandler} className="">
+
+                                </div> : null 
+                                }
+                                <Link to="" onClick={() => setShow(true)} className="btn btn-primary mr-2"   data-toggle="modal" data-target="#exampleModal"  data-aos="fade-right">Iniciar Sesión</Link>
+                                <ModalLogin show={show} close={closeModalHandler} />
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-    </section>
+        </div>
     )
 }

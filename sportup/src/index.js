@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import $ from 'jquery';
-// import Popper from 'popper.js';
+import $ from 'jquery';
+import Popper from 'popper.js';
 
-import './bootstrap.css';
-import './responsive.css';
-import './index.css';
-import './App.css';
+// import './bootstrap.css';
+// import './responsive.css';
+// import './index.css';
+import './SApp.css';
 
 import { App } from './App';
 

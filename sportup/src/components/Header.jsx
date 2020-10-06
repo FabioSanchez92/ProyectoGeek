@@ -4,9 +4,8 @@ import { NavPrincipal } from './NavPrincipal'
 
 export const Header = () => {
 
-    const
     return (
-        <header className="position-absolute w-100">
+        <header className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
             <div className="container">
                 <NavLogin
                     MenuRedes = {["fa fa-facebook", "fa fa-twitter", "fa fa-instagram"]}
@@ -15,9 +14,6 @@ export const Header = () => {
                     navItem = 'nav-item'
                     NavLink = 'nav-link space'
                     Menu = {["Inicio", "Sobre Nosotros", "Equipo", "Contacto", "Servicios"]}
-            
-
-
                 />
             </div>
         </header> 

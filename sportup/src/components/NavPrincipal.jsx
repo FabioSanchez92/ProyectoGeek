@@ -5,26 +5,17 @@ export const NavPrincipal = ({navItem , Menu, NavLink, data}) => {
     const items = [...Menu];
     
     return (
-        <nav className="navbar navbar-expand-md navbar-light">
-            <h2 className="mb-5">SportUp</h2>
-            <div class="group d-flex align-items-center">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            </div>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul className="navbar-nav mb-5">
-                    {
-                        items.map( (ItemsMenu, y)  =>{
-                            return  <li>
-                                        <Link to= '/Equipo' className= {NavLink} >{ItemsMenu}</Link>
-                                    </li>
-                        })
-                    }
-                </ul>
-            </div>
+        <nav className="my-2 my-md-0 mr-md-3 float-right navbar-nav">
+            <ul>
+                {
+                    items.map((intems, item)=>{
+                        return<>
+                                <li className="mynav"><a className="p-2 text-dark" href="#"> {intems} </a> </li>
+                        </>
+                    })
+                }
+            </ul>
         </nav>
-    )
+        
+        )
 }
