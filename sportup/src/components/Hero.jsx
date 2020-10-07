@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { ModalLogin} from './ModalLogin';
+import {ModalRegistro} from './ModalRegistro'
 
 export const Hero = ({hero}) => {
     const [show, setShow] = useState(false);
@@ -37,7 +38,7 @@ export const Hero = ({hero}) => {
                                 </div> : null 
                                 }
                                 <Link to="" onClick={() => setRegistro(true)} className="btn btn-primary mr-"   data-toggle="modal" data-target="#exampleModal"  data-aos="fade-right">Crear Cuenta</Link>
-                                <ModalLogin registro={registro} close={closeModalHandler1} />
+                                <ModalRegistro registro={registro} close={closeModalHandler1} />
                             </div>
                         </div>
                     </div>
