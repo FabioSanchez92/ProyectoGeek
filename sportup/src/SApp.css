@@ -186,3 +186,49 @@ img {
   top: -200%;
   right: -50%;
 }
+/*-----------------------------------
+    1 - NavbarMuro
+------------------------------------*/
+
+.nameUser{
+  color: #ddd;
+  font-size: 25px;
+
+}
+.blog-name{
+  margin-top: 60px;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  background: #d8d8d8;
+  color: #fff;
+}
+.profile-image{
+  border: 2px solid rgb(242, 242, 242);
+}
+.navMuro{
+  background-color: #767676b9;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.description{
+  color: #2f2f2f;
+} 
+.nav-link span{
+  color: rgb(255, 255, 255);
+}
+/*-----------------------------------
+    1 - HeaderMuro
+------------------------------------*/
+.wrapperM{
+  background-color: #013880;
+  position: relative;
+  z-index: 100;
+}
+.nav-link span{
+color: rgb(255, 255, 255);
+}
