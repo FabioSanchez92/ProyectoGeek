@@ -17,15 +17,12 @@ export const Hero = ({hero}) => {
                     <p className="Sport">Te conecta con personas con tus mismos 
                     gustos deportivos, <br/> para que puedan disfrutar de su afición juntos
                     </p>
-                                            
-                    
                     <div  className="form-group">
                         <div className="row">
                             
                             <div className="col-2">
                             { show ? 
                                 <div onClick={closeModalHandler} className="">
-
                                 </div> : null 
                                 }
                                 <Link to="" onClick={() => setShow(true)} className="btn btn-primary"   data-toggle="modal" data-target="#exampleModal"  data-aos="fade-right">Iniciar Sesión</Link>
@@ -34,10 +31,9 @@ export const Hero = ({hero}) => {
                             <div className="col-2">
                             { registro ? 
                                 <div onClick={closeModalHandler1} className="">
-
                                 </div> : null 
                                 }
-                                <Link to="" onClick={() => setRegistro(true)} className="btn btn-primary mr-"   data-toggle="modal" data-target="#exampleModal"  data-aos="fade-right">Crear Cuenta</Link>
+                                <Link to="" onClick={() => setRegistro(true)} className="btn btn-primary mr-"   data-toggle="modal" data-target="#exampleModal1"  data-aos="fade-right">Crear Cuenta</Link>
                                 <ModalRegistro registro={registro} close={closeModalHandler1} />
                             </div>
                         </div>
