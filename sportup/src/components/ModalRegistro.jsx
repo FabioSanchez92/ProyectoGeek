@@ -25,7 +25,7 @@ import React from 'react'
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Send message</button>
+                            <button type="button" className="btn btn-primary">Registrar usuario</button>
                         </div>
                         </div>
                     </div>

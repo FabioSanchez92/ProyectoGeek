@@ -11,8 +11,8 @@ export const NavPrincipal = ({navItem , Menu, NavLink, data}) => {
                     {
                         items.map((intems, y)=>{
                             return (
-                                    <Link key={y+1} to="/" className="p-2 text-dark" >{intems}</Link>
-                            )
+                                    <li  key= {y+1}  className="mynav" ><Link key= {y+1} to="/" className="p-2 text-dark" >{intems}</Link></li>
+                           )
                         })
                     }
                 </ul>

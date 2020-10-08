@@ -89,8 +89,7 @@ return (
                             placeholder="Contraseña"
                             value= {inputPass}
                             onChange = {handleInputChangePass}
-                        />
-                        
+                        />   
                     </div>
                 </form>
             </div>
